@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Axia Africa Clone</title>
+    <link rel="stylesheet" href="build/output.css">
+</head>
+<body>
+    <header class="fixed w-full top-0 bg-white pb-2">
+        <section class="wraper">
+            <input class="hidden" type="checkbox" id="navToggle">
+            <label for="navToggle">
+                <img class="absolute top-8" src="./images/icon-hamburger.svg" alt="">
+                <img class="absolute z-20 top-7 left-56" src="./images/icon-close.svg" alt="">
+            </label>
+            <nav class="bg-white absolute top-0 left-0 w-64 h-dvh z-10 header__nav">
+                <article class="wraper">
+                    <div class="flex justify-between items-center py-4 pl-4">
+                        <img src="./images/axia-logo.svg" alt="">
+                    </div>
+                    <hr class="bg-borderColor">
+                    <p class="mt-6 ml-3 mb-3 uppercase text-blackishBlue">general</p>
+                    <ul class="space-y-2">
+                        <li class="flex px-3 gap-3 bg-biroBlue py-3 rounded-md text-levelOne items-center text-white">
+                            <img src="./images/dashboard-logo.svg" alt="">
+                            <a href="">Dashboard</a>
+                        </li>
+                        <li class="flex px-3 gap-3 py-3 rounded-md text-levelOne items-center ">
+                            <img src="./images/record-logo.svg" alt="">
+                            <a href="">Recorded classes</a>
+                        </li>
+                        <li class="flex px-3 gap-3 py-3 rounded-md text-levelOne items-center ">
+                            <img src="./images/assignment-logo.svg" alt="">
+                            <a href="">Assignment</a>
+                        </li>
+                        <li class="flex px-3 gap-3 py-3 rounded-md text-levelOne items-center ">
+                            <img src="./images/message-logo.svg" alt="">
+                            <a href="">Messages</a>
+                        </li>
+                    </ul>
+                </article>
+            </nav>
+            <div class="overlay"></div>
+            <figure class="absolute top-5 left-40">
+                <img src="./images/axia-logo.svg" alt="">
+            </figure>
+            <aside>
+                <img class="hidden" src="./images/notification-icon.svg" alt="">
+                <div class="rounded-full absolute right-5 top-5 p-2 text-levelOne text-white border border-red-950 bg-profileBg">DE</div>
+            </aside>
+            <form action="" method="post" class="mt-20">
+                <label for="searchBar">
+                    <img src="./images/search-icon.svg" alt="" class="absolute bottom-5 left-8">
+                    <input class="w-full bg-Gray outline-none rounded-md py-2 px-10 placeholder:text-gray-500" type="search" id="searchBar" placeholder="search classes, assignments...">
+                </label>
+            </form>
+        </section>
+    </header>
+    <main>
+        <section class="wraper">
+            <h1 class="text-levelTwo font-extrabold mb-1">Dashboard Overview</h1>
+            <p class="text-levelOne text-blackishBlue">Hi, Dumbi Emmanuel Welcome Back 😍😄</p>
+            <article>
+                <a href="">Overview</a>
+                <a href="">Course Details</a>
+                <a href="">Payment status</a>
+            </article>
+            <article>
+                <div>
+                    <img src="./images/computer-video-call-icon.svg" alt="">
+                    <p>Completed assignments</p>
+                    <p>0</p>
+                </div>
+                <div>
+                    <img src="./images/computer-video-call-icon.svg" alt="">
+                    <p>Overall grade</p>
+                    <p>0</p>
+                </div>
+                <div>
+                    <img src="./images/computer-video-call-icon.svg" alt="">
+                    <p>Total Assignments taken</p>
+                    <p>0</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>Announcements</h2>
+            <table>
+                <tr>
+                    <th>sender</th>
+                    <th>title</th>
+                    <th>action</th>
+                </tr>
+                <tr>
+                    <td>Ajele Oluwadamilare</td>
+                    <td>
+                        Introduction to css class recording
+                    </td>
+                    <td>View more</td>
+                </tr>
+                <tr>
+                    <td>Ajele Oluwadamilare</td>
+                    <td>
+                        HTML Forms and multimedia class recording
+                    </td>
+                    <td>
+                        view more
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ajele Oluwadamilare
+                    </td>
+                    <td>
+                        Forms and Multimedia class Link
+                    </td>
+                    <td>
+                        view more
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ajele Oluwadamilare
+                    </td>
+                    <td>
+                        Semantic HTML Class Recording
+                    </td>
+                    <td>
+                        view more
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ajele Oluwadamilare
+                    </td>
+                    <td>
+                        Assignment on Semantic HTM
+                    </td>
+                    <td>
+                        view more
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <article>
+                <h3>Mentor</h3>
+                <aside>
+                    <p>Name</p>
+                    <p>Ajele Oluwadamilare</p>
+                </aside>
+                <aside>
+                    <p>Email</p>
+                    <p>example@gmail.com</p>
+                </aside>
+                <aside>
+                    <p>Phone number</p>
+                    <p>09078389702</p>
+                </aside>
+            </article>
+            <article>
+                <h4>Upcoming classes</h4>
+                <p>
+                    There aren't any upcomming classes at the moment
+                </p>
+            </article>
+            <article>
+                <h5>Quick Actions</h5>
+                <aside>
+                    <img src="./images/folder-icon.svg" alt="">
+                    <a>see new resources</a>
+                    <img src="./images/arroroutward-icon.svg" alt="">  
+                </aside>
+                <aside>
+                    <img src="./images/assignment-logo.svg" alt="">
+                    <a>see new resources</a>
+                    <img src="./images/arroroutward-icon.svg" alt="">  
+                </aside>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
