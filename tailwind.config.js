@@ -13,10 +13,13 @@ module.exports = {
         borderColor: 'rgb(222, 222, 247)',
         Gray: 'rgb(242, 244, 247)',
         blackishBlue: 'rgb(29, 41, 57)',
+        biroBlue: 'rgb(65, 65, 163)',
       },
       fontSize: {
         levelOne: '13px',
-        levelTwo: '23px',
+        levelTwo: '15px',
+        levelThree: '18px',
+        levelFour: '23px',
       }
     },
   },
