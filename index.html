@@ -13,11 +13,11 @@
     <header class="fixed w-full top-0 bg-white pb-2">
         <section class="wraper">
             <input class="hidden" type="checkbox" id="navToggle">
-            <label for="navToggle">
+            <label for="navToggle" class="lg:hidden">
                 <img class="absolute top-8" src="./images/icon-hamburger.svg" alt="">
                 <img class="absolute z-20 top-7 left-64" src="./images/icon-close.svg" alt="">
             </label>
-            <nav class="bg-white absolute top-0 left-0 w-72 h-dvh z-10 rounded-tr-lg header__nav">
+            <nav class="bg-white absolute top-0 left-0 w-72 h-dvh z-10 rounded-tr-lg header__nav  lg:top-0 lg:left-0 lg:w-48">
                 <article class="wraper">
                     <div class="flex justify-between items-center py-4 pl-4">
                         <img src="./images/axia-logo.svg" alt="">
@@ -45,23 +45,29 @@
                 </article>
             </nav>
             <div class="overlay"></div>
-            <figure class="absolute top-5 left-40">
+            <figure class="absolute top-5 left-40 sm:left-56">
                 <img src="./images/axia-logo.svg" alt="">
             </figure>
-            <aside>
-                <img class="hidden" src="./images/notification-icon.svg" alt="">
-                <span class="inline-block absolute right-5 top-5 text-levelOne text-white bg-profileBg p-2 rounded-full">DE</span>
+            <aside class="absolute right-5 top-5 flex items-center gap-4">
+                <span class="hidden bg-Gray p-2 rounded-full sm:inline-block">
+                    <img src="./images/notification-icon.svg" alt="">    
+                </span>
+                <span class="inline-block text-levelOne text-white bg-profileBg p-2 rounded-full">DE</span>
+                <span class="hidden md:flex items-center text-levelOne text-blackishBlue gap-2">
+                    Dumbi Emmanuel
+                    <img src="./images/arrowdown-icon.svg" alt="">
+                </span>
             </aside>
-            <form action="" method="post" class="mt-20">
-                <label for="searchBar">
-                    <img src="./images/search-icon.svg" alt="" class="absolute bottom-5 left-8">
+            <form action="" method="post" class="mt-20  max-w-sm">
+                <label for="searchBar" class="relative">
+                    <img src="./images/search-icon.svg" alt="" class="absolute bottom-1 left-3">
                     <input class="w-full bg-Gray outline-none rounded-md py-2 px-10 placeholder:text-gray-500" type="search" id="searchBar" placeholder="search classes, assignments...">
                 </label>
             </form>
         </section>
     </header>
-    <main>
-        <section class="wraper">
+    <main class="wraper">
+        <section class="">
             <h1 class="text-levelFour font-extrabold mb-1">Dashboard Overview</h1>
             <p class="text-levelOne text-blackishBlue">Hi, Dumbi Emmanuel Welcome Back 😍😄</p>
             <ul class="flex mt-3 items-center gap-4">
@@ -164,8 +170,8 @@
         </section> 
     </main>
     <footer>
-        <section class="wraper mt-56">
-            <article class="border shadow-md">
+        <section class="wraper mt-56 pb-5 space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-3">
+            <article class="border shadow-md max-w-sm">
                 <h3 class="text-levelTwo bg-Gray p-3">Mentor</h3>
                 <aside class="p-3 text-levelOne">
                     <p class="font-medium">Name</p>
@@ -180,13 +186,13 @@
                     <p class="font-bold text-blackishBlue">09078389702</p>
                 </aside>
             </article>
-            <article class="border mt-10 shadow-md">
+            <article class="border shadow-md max-w-sm">
                 <h4 class="bg-Gray text-levelTwo p-3">Upcoming classes</h4>
                 <p class="text-levelOne text-blackishBlue py-4 px-3">
                     There aren't any upcomming classes at the moment
                 </p>
             </article>
-            <article class="border shadow-md mb-10 mt-5">
+            <article class="border shadow-md mb-10 max-w-sm">
                 <h5 class="bg-Gray p-3 text-levelTwo">Quick Actions</h5>
                 <aside class="flex p-3 items-center justify-between">
                     <p class="font-bold flex items-center gap-4 text-blackishBlue text-levelOne">

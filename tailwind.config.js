@@ -20,6 +20,11 @@ module.exports = {
         levelTwo: '15px',
         levelThree: '18px',
         levelFour: '23px',
+      },
+      screens: {
+        sm: '500px',
+        md: '680px',
+        lg: '900px',
       }
     },
   },
