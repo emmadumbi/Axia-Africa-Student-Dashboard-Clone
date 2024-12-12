@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="build/output.css">
 </head>
 <body>
-    <header class="fixed w-full top-0 bg-white pb-2">
+    <header class="fixed w-full top-0 bg-white pb-2 lg:pl-32">
         <section class="wraper">
             <input class="hidden" type="checkbox" id="navToggle">
             <label for="navToggle" class="lg:hidden">
                 <img class="absolute top-8" src="./images/icon-hamburger.svg" alt="">
                 <img class="absolute z-20 top-7 left-64" src="./images/icon-close.svg" alt="">
             </label>
-            <nav class="bg-white absolute top-0 left-0 w-72 h-dvh z-10 rounded-tr-lg header__nav  lg:top-0 lg:left-0 lg:w-48">
+            <nav class="bg-white absolute top-0 left-0 w-72 h-dvh z-10 rounded-tr-lg header__nav  lg:top-0 lg:left-0 lg:w-40 xl:w-52">
                 <article class="wraper">
                     <div class="flex justify-between items-center py-4 pl-4">
                         <img src="./images/axia-logo.svg" alt="">
@@ -45,7 +45,7 @@
                 </article>
             </nav>
             <div class="overlay"></div>
-            <figure class="absolute top-5 left-40 sm:left-56">
+            <figure class="absolute hidden top-5 left-40 sm:left-56">
                 <img src="./images/axia-logo.svg" alt="">
             </figure>
             <aside class="absolute right-5 top-5 flex items-center gap-4">
@@ -58,7 +58,7 @@
                     <img src="./images/arrowdown-icon.svg" alt="">
                 </span>
             </aside>
-            <form action="" method="post" class="mt-20  max-w-sm">
+            <form action="" method="post" class="mt-20 lg:mt-5  max-w-sm">
                 <label for="searchBar" class="relative">
                     <img src="./images/search-icon.svg" alt="" class="absolute bottom-1 left-3">
                     <input class="w-full bg-Gray outline-none rounded-md py-2 px-10 placeholder:text-gray-500" type="search" id="searchBar" placeholder="search classes, assignments...">
@@ -66,149 +66,151 @@
             </form>
         </section>
     </header>
-    <main class="wraper">
-        <section class="">
-            <h1 class="text-levelFour font-extrabold mb-1">Dashboard Overview</h1>
-            <p class="text-levelOne text-blackishBlue">Hi, Dumbi Emmanuel Welcome Back 😍😄</p>
-            <ul class="flex mt-3 items-center gap-4">
-                <li class="text-levelTwo text-center font-extrabold text-blackishBlue">
-                    <a href="" class="">Overview</a>
-                </li>
-                <li class="text-levelTwo text-center font-extrabold text-blackishBlue">
-                    <a href="">Course Details</a>
-                </li>
-                <li class="text-levelTwo text-center font-extrabold text-blackishBlue">
-                    <a href="" class="">Payment status</a>
-                </li>
-            </ul>
-            <article class="grid my-5">
-                <div class="card text-levelOne shadow-md">
-                    <span class="bg-amber-500 inline-block p-2 rounded-full mb-3">
-                        <img src="./images/computer-video-call-icon.svg" alt="">
-                    </span>
-                    <p class="gradient-text text-levelOne mb-3">Completed assignments</p>
-                    <p class="text-biroBlue text-levelOne">0</p>
-                </div>
-                <div class="card text-levelOne shadow-md">
-                    <span class="bg-amber-500 inline-block p-2 rounded-full mb-3">
-                        <img src="./images/computer-video-call-icon.svg" alt="">
-                    </span>
-                    <p class="text-biroBlue text-levelOne mb-3 gradient-text">Overall grade</p>
-                    <p class="text-biroBlue text-levelOne">0</p>
-                </div>
-                <div class="card text-levelOne shadow-md">
-                    <span class="bg-amber-500 inline-block p-2 rounded-full mb-3">
-                        <img src="./images/computer-video-call-icon.svg" alt="">
-                    </span>
-                    <p class="text-biroBlue text-levelOne mb-3 gradient-text">Total Assignments taken</p>
-                    <p class="text-biroBlue text-levelOne">0</p>
-                </div>
-            </article>
-        </section>
-        <section class="wraper overflow-y-auto">
-            <h2 class="text-levelThree font-extrabold text-blackishBlue">Announcements</h2>
-            <table class="w-11/12 mt-8">
-                <thead class="border bg-Gray">
-                    <tr>
-                        <th class="border text-left uppercase pl-2  text-levelTwo py-2 border-borderColor">sender</th>
-                        <th class="border text-left uppercase pl-2  text-levelTwo py-2 border-borderColor">title</th>
-                        <th class="border text-left uppercase p-2 text-levelTwo border-borderColor">action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="border text-levelOne">
-                        <td class="border p-3 whitespace-nowrap">Ajele Oluwadamilare</td>
-                        <td class="border p-3 whitespace-nowrap">
-                            Introduction to css class recording
-                        </td>
-                        <td class="border p-3 text-center whitespace-nowrap">View more</td>
-                    </tr>
-                    <tr class="border text-levelOne">
-                        <td class="border p-3 whitespace-nowrap">Ajele Oluwadamilare</td>
-                        <td class="border p-3 whitespace-nowrap">
-                            HTML Forms and multimedia class recording
-                        </td>
-                        <td class="border p-3 text-center whitespace-nowrap">
-                            view more
-                        </td>
-                    </tr>
-                    <tr class="border text-levelOne">
-                        <td class="border p-3">
-                            Ajele Oluwadamilare
-                        </td>
-                        <td class="border p-3">
-                            Forms and Multimedia class Link
-                        </td>
-                        <td class="border p-3 text-center">
-                            view more
-                        </td>
-                    </tr>
-                    <tr class="border text-levelOne">
-                        <td class="border p-3">
-                            Ajele Oluwadamilare
-                        </td>
-                        <td class="border p-3">
-                            Semantic HTML Class Recording
-                        </td>
-                        <td class="border p-3 text-center">
-                            view more
-                        </td>
-                    </tr>
-                    <tr class="border text-levelOne">
-                        <td class="border p-3">
-                            Ajele Oluwadamilare
-                        </td>
-                        <td class="border p-3">
-                            Assignment on Semantic HTML
-                        </td>
-                        <td class="border p-3 text-center">
-                            view more
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section> 
-    </main>
-    <footer>
-        <section class="wraper mt-56 pb-5 space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-3">
-            <article class="border shadow-md max-w-sm">
-                <h3 class="text-levelTwo bg-Gray p-3">Mentor</h3>
-                <aside class="p-3 text-levelOne">
-                    <p class="font-medium">Name</p>
-                    <p class="font-bold text-blackishBlue">Ajele Oluwadamilare</p>
-                </aside>
-                <aside class="p-3 text-levelOne">
-                    <p class="font-medium">Email</p>
-                    <p class="font-bold text-blackishBlue">example@gmail.com</p>
-                </aside>
-                <aside class="p-3 text-levelOne">
-                    <p class="font-medium">Phone number</p>
-                    <p class="font-bold text-blackishBlue">09078389702</p>
-                </aside>
-            </article>
-            <article class="border shadow-md max-w-sm">
-                <h4 class="bg-Gray text-levelTwo p-3">Upcoming classes</h4>
-                <p class="text-levelOne text-blackishBlue py-4 px-3">
-                    There aren't any upcomming classes at the moment
-                </p>
-            </article>
-            <article class="border shadow-md mb-10 max-w-sm">
-                <h5 class="bg-Gray p-3 text-levelTwo">Quick Actions</h5>
-                <aside class="flex p-3 items-center justify-between">
-                    <p class="font-bold flex items-center gap-4 text-blackishBlue text-levelOne">
-                        <img src="./images/folder-icon.svg" alt="">
-                        See new resources</p>
-                    <img src="./images/arroroutward-icon.svg" alt="">  
-                </aside>
-                <aside class="flex p-3 items-center justify-between">
-                    <p class="font-bold flex items-center gap-4 text-blackishBlue text-levelOne">
-                        <img src="./images/assignment-logo.svg" alt="">
-                        View new assignments
+    <main class="lg:pb-28">
+        <div class="lg:pl-36 xl:pl-40">
+            <section class="wraper">
+                <h1 class="text-levelFour font-extrabold mb-1">Dashboard Overview</h1>
+                <p class="text-levelOne text-blackishBlue">Hi, Dumbi Emmanuel Welcome Back 😍😄</p>
+                <ul class="flex mt-3 items-center gap-4">
+                    <li class="text-levelTwo text-center font-extrabold text-blackishBlue">
+                        <a href="" class="">Overview</a>
+                    </li>
+                    <li class="text-levelTwo text-center font-extrabold text-blackishBlue">
+                        <a href="">Course Details</a>
+                    </li>
+                    <li class="text-levelTwo text-center font-extrabold text-blackishBlue">
+                        <a href="" class="">Payment status</a>
+                    </li>
+                </ul>
+                <article class="grid my-5">
+                    <div class="card text-levelOne shadow-md">
+                        <span class="bg-amber-500 inline-block p-2 rounded-full mb-3">
+                            <img src="./images/computer-video-call-icon.svg" alt="">
+                        </span>
+                        <p class="gradient-text text-levelOne mb-3">Completed assignments</p>
+                        <p class="text-biroBlue text-levelOne">0</p>
+                    </div>
+                    <div class="card text-levelOne shadow-md">
+                        <span class="bg-amber-500 inline-block p-2 rounded-full mb-3">
+                            <img src="./images/computer-video-call-icon.svg" alt="">
+                        </span>
+                        <p class="text-biroBlue text-levelOne mb-3 gradient-text">Overall grade</p>
+                        <p class="text-biroBlue text-levelOne">0</p>
+                    </div>
+                    <div class="card text-levelOne shadow-md">
+                        <span class="bg-amber-500 inline-block p-2 rounded-full mb-3">
+                            <img src="./images/computer-video-call-icon.svg" alt="">
+                        </span>
+                        <p class="text-biroBlue text-levelOne mb-3 gradient-text">Total Assignments taken</p>
+                        <p class="text-biroBlue text-levelOne">0</p>
+                    </div>
+                </article>
+            </section>
+            <section class="wraper overflow-y-auto">
+                <h2 class="text-levelThree font-extrabold text-blackishBlue">Announcements</h2>
+                <table class="w-11/12 mt-8">
+                    <thead class="border bg-Gray">
+                        <tr>
+                            <th class="border text-left uppercase pl-2  text-levelTwo py-2 border-borderColor">sender</th>
+                            <th class="border text-left uppercase pl-2  text-levelTwo py-2 border-borderColor">title</th>
+                            <th class="border text-left uppercase p-2 text-levelTwo border-borderColor">action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border text-levelOne">
+                            <td class="border p-3 whitespace-nowrap">Ajele Oluwadamilare</td>
+                            <td class="border p-3 whitespace-nowrap">
+                                Introduction to css class recording
+                            </td>
+                            <td class="border p-3 text-center whitespace-nowrap">View more</td>
+                        </tr>
+                        <tr class="border text-levelOne">
+                            <td class="border p-3 whitespace-nowrap">Ajele Oluwadamilare</td>
+                            <td class="border p-3 whitespace-nowrap">
+                                HTML Forms and multimedia class recording
+                            </td>
+                            <td class="border p-3 text-center whitespace-nowrap">
+                                view more
+                            </td>
+                        </tr>
+                        <tr class="border text-levelOne">
+                            <td class="border p-3">
+                                Ajele Oluwadamilare
+                            </td>
+                            <td class="border p-3">
+                                Forms and Multimedia class Link
+                            </td>
+                            <td class="border p-3 text-center">
+                                view more
+                            </td>
+                        </tr>
+                        <tr class="border text-levelOne">
+                            <td class="border p-3">
+                                Ajele Oluwadamilare
+                            </td>
+                            <td class="border p-3">
+                                Semantic HTML Class Recording
+                            </td>
+                            <td class="border p-3 text-center">
+                                view more
+                            </td>
+                        </tr>
+                        <tr class="border text-levelOne">
+                            <td class="border p-3">
+                                Ajele Oluwadamilare
+                            </td>
+                            <td class="border p-3">
+                                Assignment on Semantic HTML
+                            </td>
+                            <td class="border p-3 text-center">
+                                view more
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section> 
+        </div>
+        <div>
+            <section class="wraper pb-5 space-y-6 mt-56 lg:mt-0">
+                <article class="border shadow-md max-w-sm">
+                    <h3 class="text-levelTwo bg-Gray p-3">Mentor</h3>
+                    <aside class="p-3 text-levelOne">
+                        <p class="font-medium">Name</p>
+                        <p class="font-bold text-blackishBlue">Ajele Oluwadamilare</p>
+                    </aside>
+                    <aside class="p-3 text-levelOne">
+                        <p class="font-medium">Email</p>
+                        <p class="font-bold text-blackishBlue">example@gmail.com</p>
+                    </aside>
+                    <aside class="p-3 text-levelOne">
+                        <p class="font-medium">Phone number</p>
+                        <p class="font-bold text-blackishBlue">09078389702</p>
+                    </aside>
+                </article>
+                <article class="border shadow-md max-w-sm">
+                    <h4 class="bg-Gray text-levelTwo p-3">Upcoming classes</h4>
+                    <p class="text-levelOne text-blackishBlue py-4 px-3">
+                        There aren't any upcomming classes at the moment
                     </p>
-                    <img src="./images/arroroutward-icon.svg" alt="">  
-                </aside>
-            </article>
-        </section>
-    </footer>
+                </article>
+                <article class="border shadow-md mb-10 max-w-sm">
+                    <h5 class="bg-Gray p-3 text-levelTwo">Quick Actions</h5>
+                    <aside class="flex p-3 items-center justify-between">
+                        <p class="font-bold flex items-center gap-4 text-blackishBlue text-levelOne">
+                            <img src="./images/folder-icon.svg" alt="">
+                            See new resources</p>
+                        <img src="./images/arroroutward-icon.svg" alt="">  
+                    </aside>
+                    <aside class="flex p-3 items-center justify-between">
+                        <p class="font-bold flex items-center gap-4 text-blackishBlue text-levelOne">
+                            <img src="./images/assignment-logo.svg" alt="">
+                            View new assignments
+                        </p>
+                        <img src="./images/arroroutward-icon.svg" alt="">  
+                    </aside>
+                </article>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
